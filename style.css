@@ -1,0 +1,67 @@
+/*================================================== Google Fonts ===========================================*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --header-height: 4rem;
+
+  --first-color: hsl(24, 85%, 60%);     
+  --first-color-alt: hsl(24, 80%, 55%);
+  --first-color-light: hsl(24, 90%, 70%);
+
+  --secondary-color: hsl(95, 35%, 55%);  
+
+  --title-color: hsl(30, 12%, 18%);
+  --text-color: hsl(30, 8%, 45%);
+
+  --white-color: hsl(0, 0%, 100%);
+  --gray-color: hsl(30, 10%, 85%);
+
+  --body-color: hsl(40, 60%, 96%);
+  --body-color-alt: hsl(35, 55%, 92%);
+  --container-color: hsl(40, 40%, 98%);
+
+  --shadow-color: hsla(30, 20%, 20%, 0.08);
+
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Lora", serif;
+
+  --biggest-font-size: 2.75rem;
+  --bigger-font-size: 2rem;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.35rem;
+  --h3-font-size: 1.1rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .85rem;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  --radius-small: .5rem;
+  --radius-medium: 1rem;
+  --radius-large: 2rem;
+
+  --shadow-soft: 0 8px 24px var(--shadow-color);
+  --shadow-card: 0 12px 30px hsla(30, 20%, 20%, 0.12);
+
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: var(--body-font);
+
+  background:
+    radial-gradient(circle at 20% 40%, #dbf3cc 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, #ddbcac 0%, transparent 50%),
+    linear-gradient(180deg, #dddcd9 0%, #fcebc5 100%);
+
+    min-height: 100vh;
+}
