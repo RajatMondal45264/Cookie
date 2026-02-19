@@ -17,8 +17,8 @@
   --gray-color: hsl(30, 12%, 88%);
 
   --body-color: hsl(38, 70%, 97%);
-  --body-color-alt: hsl(35, 60%, 92%);
-  --container-color: hsl(40, 45%, 99%);
+  --body-color-alt: hsl(33, 100%, 96%);
+  --container-color: hsla(40, 92%, 90%, 0.603);
 
   --shadow-color: hsla(25, 25%, 20%, 0.08);
 
@@ -102,7 +102,8 @@ body{
 .nav-btn a{
     text-decoration: none;
     font-size: var(--normal-font-size);
-    color:var(--text-color);
+    color:rgba(0, 0, 0, 0.856);
+    font-weight: 600;
 }
 
 .btn
@@ -207,6 +208,74 @@ body{
     left: 15%;
 }
 
+.part2 {
+
+    text-align: center;
+}
+
+.part2 h2 {
+    font-family: var(--second-font);
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: 2rem;
+}
+
+.category {
+    /* background: var(--body-color-alt); */
+    padding: 2rem 1.5rem;
+    border-radius: 2rem;
+    /* box-shadow: var(--shadow-card); */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 420px;
+    margin: auto;
+}
+
+.category div {
+    background: var(--container-color);
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: var(--shadow-soft);
+    transition: 0.3s ease;
+}
+
+.category > div:hover {
+    transform: translateY(-5px);
+}
+
+.img {
+    width: 170px;
+    height: 130px;
+    flex-shrink: 0;
+    background: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img {
+    width: 70%;
+    height: auto;
+}
+
+
+.detail h3 {
+    font-size: var(--h3-font-size);
+    color: var(--first-color-alt);
+    margin-bottom: 0.2rem;
+}
+
+.detail p {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
 
 @media (min-width: 768px) {
   .nav-btn {
@@ -256,5 +325,40 @@ body{
 
     .right img {
         max-width: 420px;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .part2
+    {
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .part2 h2
+    {
+        font-size: 25px;
+    }
+    .category {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;   
+        max-width: 1300px;
+        padding: 2.5rem;
+    }
+
+    .category > div {
+        flex-direction: column;
+        text-align: center;
+        width: 350px;
+        padding: 2rem 1.3rem;
+    }
+
+    .img {
+        width: 171px;
+        height: 140px;
+        margin-bottom: 0.8rem;
     }
 }
