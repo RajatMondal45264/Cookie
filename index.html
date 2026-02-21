@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
     <link rel="stylesheet" href="style.css">
@@ -93,15 +94,93 @@
             </div>
         </section>
 
-        <section class="part3">
+       <section class="part3">
 
-            <div class="foodcard">
-                
+    <h2 class="section-title">Top List Recipes</h2>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+
+
+            <!-- Slide -->
+            <div class="swiper-slide">
+                <div class="foodcard">
+                    <div class="food">
+                        <img src="img/recipe.png" alt="">
+                    </div>
+                    <div class="recipe">
+                        <h2>Garlic Butter Pasta</h2>
+                        <button class="rating">Rating ⭐</button>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
             </div>
-        </section>
+
+            <!-- duplicate slides -->
+            <div class="swiper-slide">
+                <div class="foodcard">
+                    <div class="food">
+                        <img src="img/recipe2.png" alt="">
+                    </div>
+
+                    <div class="recipe">
+                        <h2>Garlic Butter Pasta</h2>
+                        <button class="rating">Rating ⭐</button>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="foodcard">
+                    <div class="food">
+                        <img src="img/recipe3.png" alt="">
+                    </div>
+
+                    <div class="recipe">
+                        <h2>Garlic Butter Pasta</h2>
+                        <button class="rating">Rating ⭐</button>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="foodcard">
+                    <div class="food">
+                        <img src="img/recipe4.png" alt="">
+                    </div>
+
+                    <div class="recipe">
+                        <h2>Garlic Butter Pasta</h2>
+                        <button class="rating">Rating ⭐</button>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- dots -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+</section>
+
+
     </main>
     <footer class="foot"></footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
     <script src="web.js"></script>
 </body>
 </html>
