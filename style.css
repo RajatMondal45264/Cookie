@@ -67,7 +67,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+    z-index: 1000;
 }
 
 .navbar h2
@@ -116,6 +116,7 @@ body{
     background-color: var(--first-color);
     color: black;
     font-size: 17px;
+    cursor: pointer;
 }
 
 .part1 {
@@ -279,7 +280,8 @@ body{
 .part3 {
     width: 100%;
     padding: 20px 10px;
-    z-index: -1;
+    z-index:1;
+    position: relative;
 }
 
 .section-title {
@@ -391,7 +393,154 @@ body{
     width: 85%;
 }
 
+.menu{
+    width: 100%;
+    padding: 80px 0;
+    z-index: 100;
+}
 
+.menu h2{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* ===== GRID CONTAINER ===== */
+.menu_box{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 30px;
+
+    /* Mobile default → 1 card */
+    grid-template-columns: 1fr;
+}
+
+/* ===== CARD ===== */
+.menu_card{
+    /* background:#ebb888; */
+    background-color: var(--container-color);
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.10);
+    transition: 0.3s ease;
+}
+
+.menu_card:hover{
+    transform: translateY(-8px);
+}
+
+/* ===== IMAGE ===== */
+.menu_image{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.menu_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.menu_card:hover .menu_image img{
+    transform: scale(1.08);
+}
+
+/* ===== HEART ICON ===== */
+.small_card{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ffffff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.small_card:hover{
+    color: #ff7a18;
+    transform: scale(1.1);
+}
+
+/* ===== CARD INFO ===== */
+.menu_info{
+    padding: 20px;
+    text-align: center;
+}
+
+.menu_info h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.menu_info p{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.menu_info h3{
+    font-size: 18px;
+    color: #ff7a18;
+    margin-bottom: 12px;
+}
+
+/* ===== STAR RATING ===== */
+.menu_icon{
+    color: #ffb400;
+    margin-bottom: 18px;
+}
+
+/* ===== BUTTON ===== */
+.menu_btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    background: linear-gradient(135deg,#ff9f43,#ff7a18);
+    color: #111;
+    font-weight: 600;
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+.menu_btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet → 2 cards */
+@media (min-width: 600px){
+    .menu_box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop → 4 cards */
+@media (min-width: 1024px){
+    .menu_box{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 @media (min-width: 768px) {
   .nav-btn {

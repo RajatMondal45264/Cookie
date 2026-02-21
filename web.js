@@ -26,3 +26,11 @@ const swiper = new Swiper(".mySwiper", {
         }
     }
 });
+
+const button = document.querySelector(".btn");
+button.addEventListener("click",()=>{
+    window.open("login.html", "_blank");
+});
+
+localStorage.setItem("test", "hello");
+localStorage.getItem("test");

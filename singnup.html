@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="log">
+    <div class="login">
+
+        <h1>Create Your Cookie Account</h1>
+        <p>Join and start saving recipes</p>
+
+        <div class="main">
+            <form id="signupForm">
+
+                <label>
+                    <i class="ri-user-line"></i>
+                    Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label>
+                    <i class="ri-mail-line"></i>
+                    Email</label>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+
+                <label>
+                    <i class="ri-rotate-lock-fill"></i>Password</label>
+                <input type="password" id="password" placeholder="Create password" required>
+
+                <button class="Sbtn" type="submit">Sign Up</button>
+
+                <p>Already have an account ?
+                    <span onclick="goLogin()">Login</span>
+                </p>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script src="web.js"></script>
+</body>
+</html>
